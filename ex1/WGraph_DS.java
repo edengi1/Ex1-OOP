@@ -1,12 +1,10 @@
 package ex1;
-
+import java.io.Serializable;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.LinkedList;
 
-
-
-public class WGraph_DS implements weighted_graph {
+public class WGraph_DS implements weighted_graph,Serializable {
 	//field
 	private HashMap<Integer ,node_info> V;
 	//integer in left side for src Node, and int inside hash for dest. the double is for the weight
@@ -192,20 +190,21 @@ public class WGraph_DS implements weighted_graph {
 
 	@Override
 	public int nodeSize() {
-		// TODO Auto-generated method stub
+		
 		return V.size();
 	}
 
 	@Override
 	public int edgeSize() {
-		// TODO Auto-generated method stub
+		
 		return EdgeCo;
 	}
 
 	@Override
 	public int getMC() {
-		// TODO Auto-generated method stub
+		
 		return MC;
 	}
 
 }
+
